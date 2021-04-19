@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css"/>
+    <title>To-do list</title>
+    <link rel="shortcut icon" type="image/icon" href="asset/img/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="title mt-4 text-center">
+            <h1>  <i class="fas fa-list-alt"></i> To-do list</h1>
+        </div>
+
+        <form class="m-5">
+            <div class="form-group">
+              <label for="taskName" class="font-weight-bold">Task to do</label>
+              <input type="text" class="form-control" placeholder="try for example, 'do the math homework'">
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 bg-primary">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="text-white">Yet to do</th>
+                      </tr>
+                    </thead>
+                    <tbody id="taskLeftToDo">
+
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-12 col-lg-6 bg-success">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="text-white">Completed tasks!</th>
+                      </tr>
+                    </thead>
+                    <tbody id="taskDone">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
